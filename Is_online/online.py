@@ -56,4 +56,3 @@ class IsOnline:
                 result = nick + ' is offline'
         self.driver.quit()
         return result
-
