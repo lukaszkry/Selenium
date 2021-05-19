@@ -51,7 +51,7 @@ class IsOnline:
         else:
             player_list = self.is_playing(server)
             if nick in player_list:
-                result = nick + ' is playing'
+                result = nick + ' is online'
             else:
                 result = nick + ' is offline'
         self.driver.quit()
