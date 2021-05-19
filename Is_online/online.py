@@ -4,7 +4,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
-class Is_online:
+
+class IsOnline:
 
     def __init__(self):
         PATH = 'msedgedriver.exe'
@@ -25,13 +26,16 @@ class Is_online:
                 EC.presence_of_element_located((By.TAG_NAME, 'table'))
             )
             columns = table.find_elements_by_tag_name('td')
-            server = columns[14].text
+            if columns[13].text == 'World:':
+                server = columns[14].text
+            else:
+                server = columns[16].text
         except:
             server = None
 
         return server
 
-    def is_playing(self,server):
+    def is_playing(self, server):
         players_online = []
         self.driver.get(f'https://www.tibia.com/community/?subtopic=worlds&world={server}')
         table = self.driver.find_element_by_class_name('Table2')
@@ -42,15 +46,17 @@ class Is_online:
 
     def checking(self, nick):
         server = self.if_exist(nick)
-        if server == None:
-            print(nick + ' does not exist')
+        if server is None:
+            result = nick + ' does not exist'
         else:
             player_list = self.is_playing(server)
             if nick in player_list:
-                print(nick + ' is playing')
+                result = nick + ' is playing'
             else:
-                print(nick + ' is offline')
+                result = nick + ' is offline'
         self.driver.quit()
+        return result
 
-check = Is_online()
-check.checking('Adas Qu')
+
+check = IsOnline()
+check.checking('sdasdasdad')
