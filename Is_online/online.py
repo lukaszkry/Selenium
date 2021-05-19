@@ -57,6 +57,3 @@ class IsOnline:
         self.driver.quit()
         return result
 
-
-check = IsOnline()
-check.checking('sdasdasdad')
