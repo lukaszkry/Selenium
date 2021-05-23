@@ -36,10 +36,7 @@ class Price:
         time.sleep(5)
         rows = table.find_element_by_class_name('row')
         price = rows.find_elements_by_tag_name('span')
-        for x in price:
-            print(x.text)
         data = [price[0].text, price[9].text, price[12].text]
-        self.driver.quit()
         return data
 
     def compare(self, data):
@@ -58,4 +55,8 @@ class Price:
 
 
 a = Price()
+print("1")
 a.execute()
+print('2')
+a.driver.quit()
+print('3')
