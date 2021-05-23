@@ -48,15 +48,14 @@ class Price:
         else:
             print('Wrong currency type!')
 
+    def finish(self):
+        self.driver.quit()
+
     def execute(self):
         data = self.check()
         print(data)
         self.compare(data)
+        self.finish()
 
 
-a = Price()
-print("1")
-a.execute()
-print('2')
-a.driver.quit()
-print('3')
+check = Price()
