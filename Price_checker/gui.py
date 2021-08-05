@@ -93,15 +93,19 @@ class MainWindow:
                     data.append(item)
         self.update_currency_type(data)
 
-    # def get_data_from_site(self):
-    #     return self.check.check()
-
     def compare(self):
         buy = self.buy_entry.get()
         sell = self.sell_entry.get()
         item = self.item_entry.get()
-        data = self.check.check(item)
-        self.check.compare(data, buy, sell)
+        refresh_rate = int(self.refresh_rate_entry.get())
+        number_of_refreshes = int(self.number_of_refreshes_entry.get())
+        for i in range(number_of_refreshes):
+            data = self.check.check(item)
+            self.check.compare(data, buy, sell)
+            self.check.sleep(refresh_rate)
+            print(i)
+
+    def finish(self):
         self.check.finish()
 
     def execute(self):
@@ -111,6 +115,7 @@ class MainWindow:
         self.update_currency_type(self.currency_type_list)
         self.currency_type_listbox.bind("<<ListboxSelect>>", self.fill_currency_type_entry)
         self.currency_type_entry.bind("<KeyRelease>", self.check_currency_type)
+
 
 main_window = Tk()
 app = MainWindow(main_window)

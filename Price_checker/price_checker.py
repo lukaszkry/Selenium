@@ -37,8 +37,6 @@ class Price:
         time.sleep(5)
         rows = table.find_element_by_class_name('row')
         price = rows.find_elements_by_tag_name('span')
-        for row in price:
-            print(row.text)
         if price[0].text == '':   # data = [amount, item price, currency type, item type]
             data = [1, price[-8].text, price[-5].text, price[1].text]
         else:
@@ -58,9 +56,11 @@ class Price:
     def finish(self):
         self.driver.quit()
 
+    def sleep(self, refesh_rate):
+        time.sleep(refesh_rate)
+
     def execute(self):
         data = self.check(self.item)
-        print(data)
         self.compare(data, self.buy_threshold, self.sell_threshold)
         self.finish()
 
