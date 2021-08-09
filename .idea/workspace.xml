@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e83541b-6591-461d-888e-107be8862f67" name="Default Changelist" comment="small changes">
-      <change afterPath="$PROJECT_DIR$/Price_checker/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Price_checker/Price_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Price_checker/price_checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator_2.0/praca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator_2.0/praca.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Is_he_online" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calorie_calculator/GUI.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +60,28 @@
       <recent name="C:\Users\theri\PycharmProjects\Selenium\Is_he_online" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.praca">
+    <configuration name="GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../calorie_calculator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../calorie_calculator/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,27 +103,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Web_scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\theri\PycharmProjects\Selenium\Calorie_calculator_data\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Calorie_calculator_data" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calorie_calculator_data/Web_scraper.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,6 +116,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Price_checker/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="praca" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Calculator_2.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calculator_2.0/praca.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,17 +167,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Web_scraper" />
+      <item itemvalue="Python.GUI (1)" />
       <item itemvalue="Python.GUI" />
       <item itemvalue="Python.gui" />
+      <item itemvalue="Python.praca" />
       <item itemvalue="Python.price_checker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.praca" />
+        <item itemvalue="Python.GUI (1)" />
+        <item itemvalue="Python.GUI" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.price_checker" />
-        <item itemvalue="Python.GUI" />
-        <item itemvalue="Python.Web_scraper" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621797579602</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="small changes">
+      <created>1621802103775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621802103775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,22 +238,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1621796477964" />
-    <state width="1345" height="97" key="GridCell.Tab.0.bottom" timestamp="1621800196926">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1622659305593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="97" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621800196926" />
-    <state width="1345" height="97" key="GridCell.Tab.0.center" timestamp="1621800196926">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622659305593" />
+    <state width="1345" height="97" key="GridCell.Tab.0.bottom" timestamp="1628442683054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="97" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621800196926" />
-    <state width="1345" height="97" key="GridCell.Tab.0.left" timestamp="1621800196926">
+    <state width="1345" height="97" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-963.2560.1400@0.0.1366.728" timestamp="1628442683054" />
+    <state width="1345" height="97" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1628442488773" />
+    <state width="1345" height="97" key="GridCell.Tab.0.center" timestamp="1628442683053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="97" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621800196926" />
-    <state width="1345" height="97" key="GridCell.Tab.0.right" timestamp="1621800196926">
+    <state width="1345" height="97" key="GridCell.Tab.0.center/0.0.1366.728/1366.-963.2560.1400@0.0.1366.728" timestamp="1628442683053" />
+    <state width="1345" height="97" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1628442488773" />
+    <state width="1345" height="97" key="GridCell.Tab.0.left" timestamp="1628442683053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="97" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621800196926" />
+    <state width="1345" height="97" key="GridCell.Tab.0.left/0.0.1366.728/1366.-963.2560.1400@0.0.1366.728" timestamp="1628442683053" />
+    <state width="1345" height="97" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1628442488773" />
+    <state width="1345" height="97" key="GridCell.Tab.0.right" timestamp="1628442683054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="97" key="GridCell.Tab.0.right/0.0.1366.728/1366.-963.2560.1400@0.0.1366.728" timestamp="1628442683054" />
+    <state width="1345" height="97" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1628442488773" />
     <state x="461" y="66" key="RollbackChangesDialog" timestamp="1621796252093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -233,9 +270,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621797022228" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1621797598030">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1621802118737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1621797598030" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1621802118737" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628439491946">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1628439491946" />
   </component>
 </project>
