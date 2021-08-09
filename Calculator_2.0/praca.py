@@ -1,29 +1,40 @@
-# wmic bios get serialnumber#Windows
-# hal-get-property --udi /org/freedesktop/Hal/devices/computer --key system.hardware.uuid#Linux
-# ioreg -l | grep IOPlatformSerialNumber#Mac OS X
 import os
 import sys
 import subprocess
+import pandas as pd
+
+global data
+data = []
+
+def main_dir():
+    cwd = os.getcwd()
+    return cwd
 
 def create_dir(dir):
-  if not os.path.exists(dir):
-    os.makedirs(dir)
-    print("Created Directory : ", dir)
-  else:
-    print("Directory already existed : ", dir)
-  return dir
-
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+        print("Created Directory : ", dir)
+    else:
+        print("Directory already existed : ", dir)
+    return dir
 
 def create_txt(path):
     os.chdir(path)
-    with open('monitors.txt', 'w') as fp:
+    with open('monitors.txt', 'w') as f:
+        f.close()
         pass
 
-def run_ps1():
+def run_ps1(path):
+    os.chdir(path)
     p = subprocess.Popen(["powershell.exe",
-                          "C:\\Users\\theri\PycharmProjects\\Selenium\\Calculator_2.0\\test.ps1"],
+                          "C:\\Ewidencja\\test.ps1"],
                          stdout=sys.stdout)
     p.communicate()
+
+def read_txt(path):
+    os.chdir(path)
+    read_file = pd.read_csv('monitors.txt', encoding='utf-16').replace(" ", "")
+    read_file.to_csv('monitors.csv', index=None)
 
 def getMachine_addr():
     os_type = sys.platform.lower()
@@ -43,10 +54,12 @@ def ram_clock():
     os_type = sys.platform.lower()
     return os.popen("wmic memorychip get speed").read().replace("\n", "").replace("\\", "  ")
 
-# output machine serial code: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX
-create_dir('C:\\test')
-create_txt('C:\\test')
-run_ps1()
-print(getMachine_addr())
-print(user_name())
-print(ram_clock())
+
+directory = main_dir()
+create_dir('C:\\Ewidencja')
+create_txt('C:\\Ewidencja')
+run_ps1('C:\\Ewidencja')
+read_txt('C:\\Ewidencja')
+getMachine_addr()
+user_name()
+ram_clock()
